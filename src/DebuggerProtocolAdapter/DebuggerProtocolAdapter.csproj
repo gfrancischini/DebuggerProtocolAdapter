@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Copyright>Gabriel Parelli Francischini - MIT License</Copyright>
+    <AssemblyTitle>Debugger Protocol Adapter</AssemblyTitle>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>Gabriel Parelli Francischini</Authors>
+    <TargetFrameworks>netcoreapp1.1</TargetFrameworks>
+    <AssemblyName>DebuggerProtocolAdapter</AssemblyName>
+    <PackageId>DebuggerProtocolAdapter</PackageId>
+    <PackageTags>Debugger; Visual Studio Code;</PackageTags>
+    <PackageProjectUrl>https://github.com/gfrancischini/DebuggerProtocolAdapter</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/gfrancischini/DebuggerProtocolAdapter/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/gfrancischini/DebuggerProtocolAdapter</RepositoryUrl>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <ProjectReference Include="..\..\..\HostingAdapter\src\HostingAdapter\HostingAdapter.csproj" />
+  </ItemGroup>
+
+</Project>
