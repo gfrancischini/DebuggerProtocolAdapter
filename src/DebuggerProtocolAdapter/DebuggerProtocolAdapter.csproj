@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Copyright>Gabriel Parelli Francischini - MIT License</Copyright>
     <AssemblyTitle>Debugger Protocol Adapter</AssemblyTitle>
-    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionPrefix>0.0.2</VersionPrefix>
     <Authors>Gabriel Parelli Francischini</Authors>
     <TargetFrameworks>netcoreapp1.1</TargetFrameworks>
     <AssemblyName>DebuggerProtocolAdapter</AssemblyName>
@@ -21,11 +21,12 @@
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <RuntimeIdentifiers>win8-x64;win10-x64</RuntimeIdentifiers>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HostingAdapter" Version="0.0.2-rc02" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-    <ProjectReference Include="..\..\..\HostingAdapter\src\HostingAdapter\HostingAdapter.csproj" />
   </ItemGroup>
 
 </Project>
