@@ -200,6 +200,9 @@ namespace DebuggerProtocolAdapter.Hosting.Protocol
             // Call all the shutdown methods provided by the service components
             Task[] shutdownTasks = disconnectCallbacks.Select(t => t(disconnectParams, requestContext)).ToArray();
             TimeSpan shutdownTimeout = TimeSpan.FromSeconds(ShutdownTimeoutInSeconds);
+
+			await this.Exit();
+
             // shut down once all tasks are completed, or after the timeout expires, whichever comes first.
             await Task.WhenAny(Task.WhenAll(shutdownTasks), Task.Delay(shutdownTimeout)).ContinueWith(t => Environment.Exit(0));
         }
