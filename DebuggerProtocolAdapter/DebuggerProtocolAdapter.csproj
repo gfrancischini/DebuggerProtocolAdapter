@@ -2,6 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+	
+	<Copyright>Gabriel Parelli Francischini - MIT License</Copyright>
+    <AssemblyTitle>Debugger Protocol Adapter</AssemblyTitle>
+    <VersionPrefix>0.0.4</VersionPrefix>
+    <Authors>Gabriel Parelli Francischini</Authors>
+    <AssemblyName>DebuggerProtocolAdapter</AssemblyName>
+    <PackageId>DebuggerProtocolAdapter</PackageId>
+    <PackageTags>Debugger; Visual Studio Code;</PackageTags>
+    <PackageProjectUrl>https://github.com/gfrancischini/DebuggerProtocolAdapter</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/gfrancischini/DebuggerProtocolAdapter/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/gfrancischini/DebuggerProtocolAdapter</RepositoryUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
   </PropertyGroup>
 
   <ItemGroup>
